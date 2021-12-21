@@ -5,7 +5,6 @@ resource "aws_security_group_rule" "test-cluster-traffic" {
   protocol = "-1"
   cidr_blocks       = ["10.0.0.0/16"]
   security_group_id = "${aws_security_group.test-sg.id}"
-  lifecycle { create_before_destroy = true }
 }
  
 resource "aws_security_group_rule" "instance-ssh" {
@@ -15,7 +14,6 @@ resource "aws_security_group_rule" "instance-ssh" {
   protocol = "TCP"
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = "${aws_security_group.test-sg.id}"
-  lifecycle { create_before_destroy = true }
 }
  
 resource "aws_security_group_rule" "outbound-traffic" {
@@ -25,6 +23,5 @@ resource "aws_security_group_rule" "outbound-traffic" {
   protocol          = "-1"
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = "${aws_security_group.test-sg.id}"
-  lifecycle { create_before_destroy = true }
 }
 
