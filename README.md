@@ -6,6 +6,7 @@
 
 ## Step 1. AWS Credential 설정
 * 'aws-provider.tf 에 access_key, secret_key 정보 입력'
+* 해당 Credential 정보는 AWS의 IAM Management Console에서 확인 및 설정 가능
 
 
 ## Step 2. 테라폼 플랜 명령 실행
