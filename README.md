@@ -1,4 +1,4 @@
-# terraform_test
+# 테라폼 사용하기 - AWS Quickstart
 
 ## Prerequisite
 * 필수 모듈  
