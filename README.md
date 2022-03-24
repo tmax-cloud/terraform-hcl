@@ -2,7 +2,7 @@
 
 ## Prerequisite
 * 필수 모듈  
-  * terraform v0.12.0
+  * [terraform v0.12.0](https://www.terraform.io/downloads)
 
 ## Step 1. AWS Credential 설정
 * 'aws-provider.tf 에 access_key, secret_key 정보 입력'
