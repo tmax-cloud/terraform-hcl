@@ -11,7 +11,7 @@ resource "aws_instance" "ubuntu-ssh-server" {
     ]
     key_name = "${var.key_pair}"
     count = 1
-    tags {
+    tags ={
         Name = "test-instance"
     }
     associate_public_ip_address = true

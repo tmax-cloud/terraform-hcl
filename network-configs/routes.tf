@@ -4,7 +4,7 @@ resource "aws_route_table" "test-route-table" {
     cidr_block = "0.0.0.0/0"
     gateway_id = "${aws_internet_gateway.test-gateway.id}"
   }
-  tags {
+  tags ={
     Name = "test-route-table"
   }
 }
